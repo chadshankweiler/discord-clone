@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my notes and things i learn while doing this project. 
 
-## Getting Started
+The tech stack that I'm using is Next.js, React, shadcn ui components, tailwind, 
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun run dev
-```
+Right off the bat, using tailwind I feel is pretty easy to use but also somewhat unnecessary. But I'll use it while following along with the project and maybe when i try to remake the roject I'll just use css. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ShadCn ui seems to be pretty useful. Allowing me to download the components that i need and i can use different variants and create my own pretty easy.  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+Interesting File System for routing using next.js
 
-To learn more about Next.js, take a look at the following resources:
+1. Create new folder to use it as routing
+2. use `(file)` to use it as an organizational file
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Authentication -> Clerk.com
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This is a pretty interesting use case of middleware and holy does it make my life so much easier. Its incredible that it works that easy. I do want to explore creating my own auth and how to make it reuseable. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+I need to explore how the auth pipeline works and how to I can make it. Authentication and user management is a critical part of any service I build so I'll need to learn it thoroughly. 
+
+
+Light and Dark Mode -> Shadcn
+
+I had to install next-themes and utilize their packages and follow the configuration on shadcn. I can't understand why he set a static background though. 
+Tailwind using a cn function as a way to merge styles and avoid conflicts of them. Its a good concept. 
+
+
+Database:
+
+Parisma and PlanetScale -> MySQL Database
+
+
+
+---
+
+I used clerk to configure the authentication. 
+
+
+----
+
+Things to learn:
+
+
+How to deal with hydration errors. The guy didn't say why but only showed how to take out the errors using useState and useEffect to deal with it.
+
+
+---
+
+09-27-23
+
+Learned how to make the create a server modal and form. 
+
+09-28-23
+
+Using uploadthing.com for image uploads. 
+I figure uploadthing is a wrapper on top of s3 buckets so I should learn how to use s3 buckets instead at some point. 
